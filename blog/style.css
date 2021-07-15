@@ -1,0 +1,35 @@
+.header{
+    text-align: center;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+.header a{
+    text-decoration: none;
+}
+nav{
+    grid-column: 2;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+article{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+article p,figure,blockquote{
+    grid-column: 1;
+}
+blockquote{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+@media (max-width: 500px){
+    article{
+        grid-template-columns: 100%;
+    }
+    nav{
+        grid-column: 1;
+    }
+}
